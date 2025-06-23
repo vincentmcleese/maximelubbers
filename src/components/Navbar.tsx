@@ -48,6 +48,16 @@ export default function Navbar() {
           ))}
           <li>
             <Link
+              href="https://www.untanglelab.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-4 py-2 rounded-full bg-[#6C7AD7] text-white font-medium hover:bg-[#6C7AD7]/90 transition-colors duration-150 focus:outline-none focus:ring-2 focus:ring-[#6C7AD7]/50"
+            >
+              Untangle Lab
+            </Link>
+          </li>
+          <li>
+            <Link
               href="#contact"
               className="px-4 py-2 rounded-full bg-[#FF1DE9] text-white font-medium hover:bg-[#FF1DE9]/90 transition-colors duration-150 focus:outline-none focus:ring-2 focus:ring-[#FF1DE9]/50"
             >
@@ -79,6 +89,17 @@ export default function Navbar() {
                 </Link>
               </li>
             ))}
+            <li>
+              <Link
+                href="https://www.untanglelab.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-6 py-2 rounded-full bg-[#6C7AD7] text-white font-medium hover:bg-[#6C7AD7]/90 transition-colors duration-150"
+                onClick={() => setOpen(false)}
+              >
+                Untangle Lab
+              </Link>
+            </li>
             <li>
               <Link
                 href="#contact"
