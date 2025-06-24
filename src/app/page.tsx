@@ -920,7 +920,7 @@ export default function Home() {
                 </li>
                 <li>
                   <a
-                    href="#"
+                    href="#about"
                     className="text-white/80 hover:text-[#FF1DE9] transition-colors"
                   >
                     About
@@ -928,7 +928,7 @@ export default function Home() {
                 </li>
                 <li>
                   <a
-                    href="#"
+                    href="#services"
                     className="text-white/80 hover:text-[#FF1DE9] transition-colors"
                   >
                     Services
