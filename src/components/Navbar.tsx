@@ -15,8 +15,13 @@ const navItems = [
 export default function Navbar() {
   const [open, setOpen] = useState(false);
 
+  const handleMenuToggle = () => {
+    console.log("Menu toggle clicked, current state:", open);
+    setOpen((v) => !v);
+  };
+
   return (
-    <header>
+    <header className="relative">
       <nav className="max-w-6xl mx-auto flex items-center justify-between px-4 py-4">
         {/* Logo/Name */}
         <Link
@@ -67,9 +72,9 @@ export default function Navbar() {
         </ul>
         {/* Mobile Hamburger */}
         <button
-          className="md:hidden flex flex-col gap-1.5 p-2"
+          className="md:hidden flex flex-col gap-1.5 p-2 z-50 relative"
           aria-label="Open menu"
-          onClick={() => setOpen((v) => !v)}
+          onClick={handleMenuToggle}
         >
           <span className="block w-6 h-0.5 bg-foreground rounded"></span>
           <span className="block w-6 h-0.5 bg-foreground rounded"></span>
@@ -77,7 +82,7 @@ export default function Navbar() {
         </button>
         {/* Mobile Menu */}
         {open && (
-          <ul className="absolute top-full left-0 w-full bg-background border-t border-black/10 dark:border-white/10 flex flex-col items-center gap-4 py-4 md:hidden shadow-lg z-50">
+          <ul className="absolute top-full left-0 right-0 w-full bg-background border-t border-black/10 dark:border-white/10 flex flex-col items-center gap-4 py-4 md:hidden shadow-lg z-40">
             {navItems.map((item) => (
               <li key={item.label}>
                 <Link

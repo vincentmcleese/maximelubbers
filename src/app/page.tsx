@@ -14,7 +14,7 @@ const testimonials = [
     text: `It was a great roundtable on Ethical AI & Leadership and I wish we had more time! For me, it was the most insightful part of the conference.`,
   },
   {
-    author: "Pieter Paul van Oerle, Example Corp",
+    author: "Pieter Paul van Oerle, Nlmtd",
     text: `Maxime's workshop was inspiring and practical. Our team left with actionable insights and a renewed sense of purpose.`,
   },
 ];
